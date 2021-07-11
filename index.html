@@ -5,20 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Calculator</title>
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-    <p>
-        <h1>CALCULADORA WEB</h1>
-        Ingrese los numeros que quiera operar
-        y presiones el boton de la operación a realizar:<br><br>
-        <input type="text" id="valor_uno"/>
-        <input type="button" value="+" id="suma"/>
-        <input type="button" value="-" id="resta"/>
-        <input type="button" value="*" id="multiplicacion"/>
-        <input type="button" value="/" id="division"/>
-        <input type="text" id="valor_dos"/>
-        = <label id="lbResultado"></label>
-    </p>
+    <header>
+        <h1>WEB CALCULATOR</h1>
+    </header>
+    <main>
+        <section class="operacionesBasicas">
+            <p>
+            Ingrese los numeros que quiera operar
+            y presiones el operador:
+            </p>
+            <div class="operacionesBasicas__contenedor">
+                <input class="operacionesBasicas__contenedor--text" type="text" id="valor_uno"/>
+                <input type="button" value="+" id="suma"/>
+                <input type="button" value="-" id="resta"/>
+                <input type="button" value="*" id="multiplicacion"/>
+                <input type="button" value="/" id="division"/>
+                <input class="operacionesBasicas--text" type="text" id="valor_dos"/>
+                = <label id="lbResultado"></label>
+            </div>
+        </section>
+    </main>
+    <footer>    
+        <p>Sobre nosotros</p>
+    </footer>
 
     <script src="./javascript/calculadora.js"></script>
 </body>

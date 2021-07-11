@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+header{
+    background-color: #8BC6EC;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+}
+
+header h1 {
+    font-size: 4rem;
+    color:aliceblue;
+    margin:1rem;
+    font-weight: bold;
+}
+
+main{
+    height: 70rem;
+}
+
+
+main{
+    background-color: #8BC6EC;
+    background-image: linear-gradient(180deg, #8BC6EC 0%, #9599E2 100%);
+    width: 100%
+}
+.operacionesBasicas{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+.operacionesBasicas p{
+    color: aliceblue;
+    font-size: 1.8rem;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+.operacionesBasicas__contenedor{
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.operacionesBasicas input{
+    width: 3rem;
+    
+}
+#lbResultado{
+    color:red;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+footer{
+    background-color: #9599E2;
+    width: 100%;
+}
