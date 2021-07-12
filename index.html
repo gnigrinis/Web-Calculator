@@ -5,31 +5,125 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Calculator</title>
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/stylePhone.css">
+    <link rel="stylesheet" href="./style/styleTablet.css" media="screen and (min-width: 740px)">
+    <link rel="stylesheet" href="./style/stylePc.css" media="screen and (min-width: 1480px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
+        <img src="https://image.flaticon.com/icons/png/512/2249/2249539.png">
         <h1>WEB CALCULATOR</h1>
     </header>
     <main>
         <section class="operacionesBasicas">
+            <h2>Operaciones Basicas</h2>
+            <img src="https://image.flaticon.com/icons/png/512/897/897368.png">
             <p>
             Ingrese los numeros que quiera operar
             y presiones el operador:
             </p>
             <div class="operacionesBasicas__contenedor">
-                <input class="operacionesBasicas__contenedor--text" type="text" id="valor_uno"/>
-                <input type="button" value="+" id="suma"/>
-                <input type="button" value="-" id="resta"/>
-                <input type="button" value="*" id="multiplicacion"/>
-                <input type="button" value="/" id="division"/>
-                <input class="operacionesBasicas--text" type="text" id="valor_dos"/>
-                = <label id="lbResultado"></label>
+                <input class="inputOperaciones" type="number" id="valor_uno"/>
+                <button type="button" value="+" id="suma">+</button>
+                <button type="button" value="-" id="resta">-</button>
+                <button type="button" value="*" id="multiplicacion">*</button>
+                <button type="button" value="/" id="division">/</button>
+                <input class="inputOperaciones" type="number" id="valor_dos"/>
+                <span> = </span> <label class="label" id="labelResultadoBasico"></label>
             </div>
         </section>
+
+
+        <section class="operacionesCuadrado">
+            <h2>Operaciones con Cuadrados</h2>
+            <img src="https://image.flaticon.com/icons/png/512/1200/1200874.png">
+            <form>
+                <p for="inputCuadrado">
+                    Escribe cuánto mide el lado de tu cuadrado en centimetros:
+                </p>
+                <div class="operacionesCuadrado__contenedor">
+                    <div class="operacionesCuadrado__contenedor--resultado">
+                        <input class="inputCuadrado" id="inputCuadrado" type="number"/>
+                        <span> = </span>
+                        <label class="label" id="labelResultadoCuadrado"></label>
+                    </div>
+                    <div class="operacionesCuadrado__contenedor--buttons">
+                        <button type="button" onclick="calcularPerimetroCuadrado()">
+                            Calcular perímetro
+                        </button>
+                        <button type="button" onclick="calcularAreaCuadrado()">
+                            Calcular área
+                        </button>
+                </div>
+                </div>
+            </form>
+        </section>
+        
+        <section class="operacionesTriangulos">
+            <h2>Operaciones con Triangulos</h2>
+            <img src="https://image.flaticon.com/icons/png/512/594/594742.png">
+            <form>
+                <p for="inputTriangulo">
+                    Escribe en centimetros el lado 1, lado 2 y la base:
+                </p>
+                <div class="operacionesTriangulo__contenedor">
+                    <div class="operacionesTriangulo__contenedor--resultado">
+                        <input class="inputTriangulo" id="inputTrianguloLado1" type="number"/>
+                        <input class="inputTriangulo" id="inputTrianguloLado2" type="number"/>
+                        <input class="inputTriangulo" id="inputTrianguloBase" type="number"/>
+                        <span> = </span>
+                        <label class="label" id="labelResultadoTriangulo"></label>
+                    </div>
+                    <div class="operacionesTriangulo__contenedor--buttons">
+                        <button type="button" onclick="calcularPerimetroTriangulo()">
+                            Calcular perímetro
+                        </button>
+                        <button type="button" onclick="calcularAreaTriangulo()">
+                            Calcular área
+                        </button>
+                </div>
+                </div>
+            </form>
+        </section>
+
+
+        <section class="operacionesCirculos">
+            <h2>Operaciones con Circulos</h2>
+            <img src="https://image.flaticon.com/icons/png/512/1200/1200831.png">
+            <form>
+                <p for="inputCirculo">
+                    Escribe cuánto mide el radio en centimetros:
+                </p>
+                <div class="operacionesCirculo__contenedor">
+                    <div class="operacionesCirculo__contenedor--resultado">
+                        <input class="inputCirculo" id="inputCirculo" type="number"/>
+                        <span> = </span>
+                        <label class="label" id="labelResultadoCirculo"></label>
+                    </div>
+                    <div class="operacionesCirculo__contenedor--buttons">
+                        <button type="button" onclick="calcularPerimetroCirculo()">
+                            Calcular perímetro
+                        </button>
+                        <button type="button" onclick="calcularAreaCirculo()">
+                            Calcular área
+                        </button>
+                </div>
+                </div>
+            </form>
+        </section>
     </main>
+
     <footer>    
-        <p>Sobre nosotros</p>
+        <p>Acerca del creador</p>
+        <div>
+            <ul class="redesSociales">
+                <a href="https://github.com/gnigrinis"><img src="https://image.flaticon.com/icons/png/512/733/733609.png"></a>
+                <a href="https://www.linkedin.com/in/giancarlonigrinis/"><img src="https://image.flaticon.com/icons/png/512/174/174857.png"></a>              
+            </ul>
+        </div>
     </footer>
 
     <script src="./javascript/calculadora.js"></script>

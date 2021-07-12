@@ -1,0 +1,196 @@
+@media (min-width: 740px) {
+/* CONFIG GLOBAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Banner*/
+header{
+    background-color: #8BC6EC;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+}
+header img{
+    width: 5rem;
+}
+header h1 {
+    font-size: 4rem;
+    color:aliceblue;
+    margin:1rem;
+    font-weight: bold;
+}
+
+/*Main general*/
+main{
+    height: auto;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(180deg, #8BC6EC 0%, #9599E2 100%);
+    width: 100%;
+    height: calc(100vh - 7rem - 8rem);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*Contenedores en main*/
+.operacionesBasicas,.operacionesCuadrado,.operacionesTriangulos,.operacionesCirculos{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    width: 35rem;
+    height: 25rem;
+    padding: 0.1rem;
+    border: 0.1rem solid #f8f0f8;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255,255,255,0.1)
+}
+
+/*Elementos de contenedores*/
+main h2 {
+    color: aliceblue;
+    font-size: 2rem;
+    flex-direction: row;
+    margin-top: 2rem;
+    -webkit-text-stroke: 0.5px #000000;
+}
+main p{
+    color: aliceblue;
+    font-size: 1.4rem;
+    flex-direction: row;
+    margin-top: 2rem;
+    -webkit-text-stroke: 0.1px #000000;
+}
+main img{
+    width: 8rem;
+    margin-top: 1rem;
+}
+
+/*contenedor de operacionesBasicas*/
+.operacionesBasicas h2{
+    margin: 0 0;
+}
+.operacionesBasicas__contenedor{
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.operacionesBasicas input{
+    width: 4rem;
+}
+.operacionesBasicas__contenedor button{
+    width: 3rem;
+    height: 2rem;
+}
+
+/*Estilos Inputs*/
+.inputOperaciones,.inputCuadrado,.inputTriangulo,.inputCirculo{
+    text-align: center;
+}
+
+/*Resultado e Igual*/
+.label{
+    color:rgb(255, 255, 255);
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+main section span{
+    color: rgb(255,255,255);
+    margin-left: 1rem;
+    font-size: 1.6rem;
+}
+
+/*contenedor de operacionesCuadrado*/
+.operacionesCuadrado__contenedor{
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+}
+.operacionesCuadrado__contenedor--buttons{
+    margin: 1rem;
+}
+
+/*Input Cuadrado*/
+#inputCuadrado{
+    width: 4rem;
+}
+
+/*contenedor de operacionesTriangulos*/
+.inputTriangulo{
+    width: 4rem;
+}
+.operacionesTriangulo__contenedor--buttons{
+    margin: 1rem;
+}
+.operacionesTriangulo__contenedor--resultado{
+    margin: 1rem;
+}
+
+/*contenedor de operacionesCirculo*/
+.operacionesCirculo__contenedor{
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+}
+.operacionesCirculo__contenedor--buttons{
+    margin: 1rem;
+}
+
+/*Input Circulo*/
+#inputCirculo{
+    width: 4rem;
+}
+
+/*Buttons*/
+button{
+    cursor: pointer;
+}
+
+/*Footer*/
+footer{
+    background-color: #9599E2;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction:column;
+}
+footer p{
+    color: white;
+    font-size: 1.4rem;
+    align-self: flex-start;
+    margin-left: 1rem;
+}
+.redesSociales{
+    display: flex;
+    background-color: rgba(255,255,255,0.1);
+    width: 10rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+.redesSociales a img{
+    width: 3rem;
+    margin: 0.5rem 1rem;
+    cursor: pointer;
+}
+.redesSociales a img:hover{
+    opacity: 0.5;
+}
+}
