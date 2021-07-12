@@ -1,5 +1,8 @@
 ## Web Calculator
 
+### About Page
+This page was made to give an online solution for math problems to primary and secondary students.
+
 ### Features
 - Supports addition, subtraction, multiplication and division operations.
 - Supports calculation of perimeters in squares, triangles and circles.
