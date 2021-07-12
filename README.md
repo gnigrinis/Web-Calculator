@@ -4,6 +4,13 @@
 - Supports addition, subtraction, multiplication and division operations.
 - Supports calculation of perimeters in squares, triangles and circles.
 - Supports calculation of areas of squares, triangles and circles. 
+- Responsive design for phone, tablets and large screens. 
+
+### Used knowledge
+- Html 5.
+- CSS 3 for Phone, Tablet and Large Screen.
+- JavaScript.
+- Responsive Design Oriented to Mobile-first.
 
 ### About creator
 
